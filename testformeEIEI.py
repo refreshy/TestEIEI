@@ -71,7 +71,7 @@ class Simple_drawing_window2(QWidget):
         
         p.end()
 
-class Simple_drawing_window2(QWidget):
+class Simple_drawing_window3(QWidget):
     def __init__(self):
         QWidget.__init__(self, None)
         self.setWindowTitle("Simple Drawing")
@@ -94,8 +94,10 @@ def main():
     
     w1=Simple_drawing_window1()
     w2=Simple_drawing_window2()
+    w3=Simple_drawing_window3()
     w1.show()
     w2.show()
+    w3.show()
     return app.exec_()
 
 if __name__ == "__main__":
