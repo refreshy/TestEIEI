@@ -20,11 +20,21 @@ class Simple_drawing_window(QWidget):
         ])
 
         p.drawImage(QRect(200, 100, 320, 320), self.rabbit)
-        p.setPen(QColor(1,0,1))
-        p.drawPolygon([QPoint(0,0), QPoint(0,100), QPoint(50,50)])
-        p.setPen(QColor(1,0,0))
-        p.drawPolygon([QPoint(0,0), QPoint(0,100), QPoint(50,10)])
-        p.end()
+        
+
+class Simple_drawing_window3(QWidget):
+    def __init__(self):
+        QWidget.__init__(self, None)
+    def paintEvent(self, e):
+        p = QPainter()
+        p.begin(self)
+
+        p.setPen(QColor(0, 1, 0))
+        p.setBrush(QColor(0, 127, 0))
+        p.drawPolygon([
+            QPoint( 0, 100), QPoint(100, 110),
+            QPoint(130, 100)
+        ])
 
 def main():
     app = QApplication(sys.argv)
