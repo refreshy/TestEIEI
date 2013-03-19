@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
+	<name>eiei</name>
+=======
 	<name>Lab08GitHubInAPTANA</name>
+>>>>>>> 9339b4d9212d58aed36d04132e1a1076b66c9f38
 	<comment></comment>
 	<projects>
 	</projects>
