@@ -73,8 +73,10 @@ class Simple_drawing_window2(QWidget):
 def main():
     app = QApplication(sys.argv)
     
-    w=Simple_drawing_window1()
-    w.show()
+    w1=Simple_drawing_window1()
+    w2=Simple_drawing_window2()
+    w1.show()
+    w2.show()
     return app.exec_()
 
 if __name__ == "__main__":
