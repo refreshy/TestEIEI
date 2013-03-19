@@ -23,3 +23,15 @@ def motion(event):
 
         xold = event.x
         yold = event.y
+
+def main():
+    root = Tk()
+    drawing_area = Canvas(root)
+    drawing_area.pack()
+    drawing_area.bind("<Motion>", motion)
+    drawing_area.bind("<ButtonPress-1>", b1down)
+    drawing_area.bind("<ButtonRelease-1>", b1up)
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
