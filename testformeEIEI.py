@@ -14,15 +14,12 @@ class Simple_drawing_window(QWidget):
         p.begin(self)
 
         p.setPen(QColor(0, 0, 0))
-        p.setBrush(QColor(0, 127, 0))
+        p.setBrush(QColor(255, 0, 0))
         p.drawPolygon([
-            QPoint( 0, 100), QPoint(100, 110),
-            QPoint(130, 100), QPoint(100, 150),
+            QPoint( 100, 100), QPoint(100, 200),
+            QPoint(200, 200), QPoint(200, 100),
         ])
-
-        p.drawImage(QRect(200, 100, 320, 320), self.rabbit)
-        p.setPen(QColor(1,0,1))
-        p.drawPolygon([QPoint(0,0), QPoint(0,100), QPoint(50,50)])
+        
         p.end()
 
 def main():
