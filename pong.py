@@ -5,7 +5,7 @@ class PaintBox( Frame ):
         Frame.__init__( self )
         self.pack( expand = YES, fill = BOTH )
         self.master.title( "A simple paint program" )
-        self.master.geometry( "300x150" )
+        self.master.geometry( "700x700" )
 
         self.message = Label( self, text = "Drag the mouse to draw" )
         self.message.pack( side = BOTTOM )
