@@ -20,6 +20,8 @@ class Simple_drawing_window(QWidget):
         ])
 
         p.drawImage(QRect(200, 100, 320, 320), self.rabbit)
+        p.setPen(QColor(1,0,1))
+        p.drawPolygon([QPoint(0,0), QPoint(0,100), QPoint(50,50)])
         p.end()
 
 def main():
